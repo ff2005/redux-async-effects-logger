@@ -15,7 +15,7 @@ const getLoggerParams = (params: any) => {
   return ({ title: false, type: false, action: false, error: false })
 }
 
-export const logger = (...params: any) => {
+export default (...params: any) => {
   const logger = console
   const { title, type, action, error } = getLoggerParams(params)
   if (title && type && action) {
