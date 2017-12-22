@@ -1,0 +1,19 @@
+{
+  "name": "redux-async-effects-logger",
+  "version": "0.1.0",
+  "description": "WIP: Redux async side effects logger",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ff2005/redux-async-effects-logger.git"
+  },
+  "keywords": [
+    "redux",
+    "async",
+    "middleware",
+    "redux-middleware",
+    "logger"
+  ],
+  "author": "Filipe Fradique <f.fradique@gmail.com>",
+  "license": "MIT"
+}
