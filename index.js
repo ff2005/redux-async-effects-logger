@@ -19,7 +19,7 @@ export default (...params: any) => {
   const logger = console
   const { title, type, action, error } = getLoggerParams(params)
   if (title && type && action) {
-    logger.group(`%c ${title}%c ${type} 🦄 📚 🦄`, 'color: gray; font-weight: lighter;', 'font-weight: bold;')
+    logger.group(`%c ${title}%c ${type} ✨✨✨`, 'color: gray; font-weight: lighter;', 'font-weight: bold;')
     logger.log('%c action    ', 'color: #03A9F4; font-weight: bold;', action)
     if (error) {
       logger.log('%c error     ', 'color: #F20404; font-weight: bold;', error)
