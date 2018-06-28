@@ -1,6 +1,4 @@
-/* @flow */
-
-const getLoggerParams = (params: any) => {
+const getLoggerParams = (params) => {
   if (Array.isArray(params) && params.length) {
     if (params[0] && typeof params[0] === 'string') {
       const title = params[0]
@@ -8,14 +6,14 @@ const getLoggerParams = (params: any) => {
         const action = params[1].action
         const type = action.type || 'Undefined'
         const error = params[1].error
-        return ({ title, type, action, error })
+        return { title, type, action, error }
       }
     }
   }
-  return ({ title: false, type: false, action: false, error: false })
+  return { title: false, type: false, action: false, error: false }
 }
 
-export default (...params: any) => {
+export default (...params) => {
   const logger = console
   const { title, type, action, error } = getLoggerParams(params)
   if (title && type && action) {
